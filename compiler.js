@@ -69,5 +69,5 @@ const transpile = ast => {
 
   const op1 = 'sum 1 1';
   const op2 = 'mul 4 sum 3 5'
-
+  console.log(transpile(parse(lex(op2))));
   console.log(eval(transpile(parse(lex(op2)))));
